@@ -1,0 +1,64 @@
+body{
+    font-family: -apple-system;
+    font-size: 30pt;
+    background-color: rgba(114, 56, 14, 0.89);
+    text-align: center;
+}
+.stopTitle{
+    margin: 0;
+}
+.chocBoys{
+    align-content: center;
+}
+.styleButtons{
+    align-content: center;
+}
+.justChoc{
+    height: 125px;
+    width: 125px; 
+    margin: 25px;
+    animation: pop 2.0s;
+    animation-iteration-count: 10s;
+}
+#shadeFrog{
+    height: 175px;
+    width: 175px; 
+    animation: wink 2.0s;
+    animation-iteration-count: 10s;
+}
+.chocButton{
+    background-color: black;
+    border: 10pt double brown;
+    color: rgb(151, 151, 151);
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 20pt;
+    font-family: -apple-system;
+    margin: 8px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: grey;
+    border: 10pt;
+    border-style: double;
+    border-color: brown;
+    color: rgb(151, 151, 151);
+    padding: 15px 32px;
+    display: inline-block;
+    font-size: 20pt;
+    font-family: -apple-system;
+    margin: 8px;
+
+}
+@keyframes pop {
+    0% { height: 125px; width: 125px; }
+    25% { height: 125px; width: 125px; }
+    75% { height: 150px; width: 150px; }
+    100% { height: 125px; width: 125px; }
+}
+@keyframes wink {
+    0% { transform: rotate(-0deg);}
+    25% { transform: rotate(-10deg);}
+    75% { transform: rotate(10deg);} 
+    100% { transform: rotate(0deg);}
+}
